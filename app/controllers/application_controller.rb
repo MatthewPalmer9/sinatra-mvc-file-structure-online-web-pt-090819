@@ -18,6 +18,8 @@ class ApplicationController < Sinatra::Base
 
   end
 
+  binding.pry
+
   configure do
   	set :views, "app/views"
   	set :public_dir, "public"
