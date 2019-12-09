@@ -13,9 +13,12 @@ class ApplicationController < Sinatra::Base
     attr_accessor :name, :breed
     attr_reader :id
 
+    @@all = []
+
     def initialize(name, breed, id = nil)
       @name = name
-      @breed = breed 
+      @breed = breed
+      @@all << self
     end
 
   end
